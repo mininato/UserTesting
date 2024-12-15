@@ -268,6 +268,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="other/" class="md-tabs__link">
+        
+  
+    
+  
+  Other
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -449,46 +466,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6general-workflow-using-the-pipeline" class="md-nav__link">
+  <a href="#6general-workflow-using-the-gradio-user-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      6.General Workflow using the Pipeline
+      6.General Workflow using the Gradio User Interface
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6.General Workflow using the Pipeline">
+    <nav class="md-nav" aria-label="6.General Workflow using the Gradio User Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#61-how-to-combine-dataframes" class="md-nav__link">
+  <a href="#61-how-to-use-gradio-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      6.1. How to combine Dataframes
+      6.1 How to use Gradio Interface
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#62-how-to-extract-features" class="md-nav__link">
+  <a href="#62-how-to-combine-dataframes" class="md-nav__link">
     <span class="md-ellipsis">
-      6.2. How to extract Features
+      6.2. How to combine Dataframes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#63-how-to-train-a-model" class="md-nav__link">
+  <a href="#63-how-to-extract-features" class="md-nav__link">
     <span class="md-ellipsis">
-      6.3 How to train a Model
+      6.3. How to extract Features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#64-how-to-classify-movement-data" class="md-nav__link">
+  <a href="#64-how-to-train-a-model" class="md-nav__link">
     <span class="md-ellipsis">
-      6.4 How to classify Movement Data
+      6.4 How to train a Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-how-to-classify-movement-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 How to classify Movement Data
     </span>
   </a>
   
@@ -894,6 +920,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -915,7 +961,7 @@
 <h2 id="1-installation"><strong>1. Installation</strong></h2>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li><strong>Python</strong>: Version 3.8 or higher.</li>
+<li><strong>Python</strong>: Version 3.10 or higher.</li>
 <li><strong>Environment</strong>: It is recommended to create a virtual environment for managing dependencies.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
@@ -925,8 +971,8 @@
 <ol>
 <li>
 <p>Clone the repository:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;your-username&gt;/emotion-recognition-pipeline.git
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>emotion-recognition-pipeline
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://huggingface.co/spaces/mininato/EmotionClassificationPipeline
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>EmotionClassificationPipeline
 </code></pre></div></p>
 </li>
 <li>
@@ -987,15 +1033,56 @@
 <p>This Pipeline consists out of <strong>multiple smaller pipelines</strong> which can be used seperately for <strong>different purposes</strong> and work as <strong>checkpoints</strong> in your experimental workflow.</p>
 <p><img alt="Complete Pipeline" src="images/Complete_PipelineDiagram_End.drawio.svg" /></p>
 <hr />
-<h2 id="6general-workflow-using-the-pipeline"><strong>6.General Workflow using the Pipeline</strong></h2>
-<h3 id="61-how-to-combine-dataframes"><strong>6.1. How to combine Dataframes</strong></h3>
-<p>If you want to train a model on a given dataset, you will like have two seperate datasets, one containing the Raw Accelerometer Data and second a Dataset with the labeled data. You can now use this predefined pipeline to combine those datasets. You can choose which size the timewindow should be. A timewindow is the amount of time before and after the emotion was labeled. Also you will have to </p>
+<h2 id="6general-workflow-using-the-gradio-user-interface"><strong>6.General Workflow using the Gradio User Interface</strong></h2>
+<h3 id="61-how-to-use-gradio-interface"><strong>6.1 How to use Gradio Interface</strong></h3>
+<p><img alt="Gradio Showcase" src="images/gradiotut.gif" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" /></p>
 <hr />
-<h3 id="62-how-to-extract-features"><strong>6.2. How to extract Features</strong></h3>
+<blockquote>
+<p><strong>Note:</strong> If you want to read more on each setting then click <a href="other/">here</a>.</p>
+</blockquote>
+<h3 id="62-how-to-combine-dataframes"><strong>6.2. How to combine Dataframes</strong></h3>
+<ol>
+<li>Import Accelerometer Data &amp; SelfReports Data</li>
+<li>Set the time window that you want to filter (in minutes before and after a report)</li>
+<li>Set the emotion labels that exist in your data (e.g. valence, arousal)</li>
+<li>Execute Pipeline</li>
+<li>Download combined dataset</li>
+</ol>
 <hr />
-<h3 id="63-how-to-train-a-model"><strong>6.3 How to train a Model</strong></h3>
+<h3 id="63-how-to-extract-features"><strong>6.3. How to extract Features</strong></h3>
+<ol>
+<li>Import the combined dataset</li>
+<li>Add cutoff frequency and order for low pass filter</li>
+<li>Set desired scaler</li>
+<li>Set window length and overlapping step size (in seconds) for sliding window technique</li>
+<li>Set frequency in which data was recorded</li>
+<li>Set magnitude</li>
+<li>Set the emotion labels that exist in your data (e.g. valence, arousal)</li>
+<li>Execute Pipeline</li>
+<li>Download features dataset</li>
+</ol>
 <hr />
-<h3 id="64-how-to-classify-movement-data"><strong>6.4 How to classify Movement Data</strong></h3>
+<h3 id="64-how-to-train-a-model"><strong>6.4 How to train a Model</strong></h3>
+<ol>
+<li>Import the features dataset</li>
+<li>Select if PCA is being applied and the PCA variance</li>
+<li>Select classifier</li>
+<li>Set the emotion labels that exist in your data (e.g. valence, arousal)</li>
+<li>Select which label should be the target for the model to classify</li>
+<li>Execute Pipeline</li>
+<li>Download model.pkl file and report.json file</li>
+</ol>
+<hr />
+<h3 id="65-how-to-classify-movement-data"><strong>6.5 How to classify Movement Data</strong></h3>
+<ol>
+<li>Import accelerometer data and model</li>
+<li>Add cutoff frequency and order for lowpassfilter</li>
+<li>Set desired scaling type</li>
+<li>Set period for classifying movement data</li>
+<li>Set frequency in which data was recorded</li>
+<li>Set magnitude (measure of the overall strength or intensity of a signal, calculated by combining the contributions of all three accelerometer axes (x, y, z))</li>
+<li>Set the emotion labels that exist in your data (e.g. valence, arousal)</li>
+</ol>
 <hr />
 
 
