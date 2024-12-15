@@ -3,6 +3,9 @@
 ## 🚀 **Link to Pipeline**
 https://huggingface.co/spaces/mininato/EmotionClassificationPipeline
 
+## 📄 **Link to Documentation**
+[View Documentation](https://mininato.github.io/UserTesting/)
+
 ## 🗂️ **Link to Files**
 - working on it
 
