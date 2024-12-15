@@ -40,22 +40,18 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
 nav:
-  - Home: index.md
-  - Getting Started:
-    - Installation: installation.md
-    - Input Data: gettingstarted_input_data.md
-        #- Self Reports: input_data_selfreports.md
-    - Quick Start: quick_start.md
+  - Getting Started: index.md
+  # - Getting Started: gettingstarted.md
   - Config: config.md
   - Pipelines: 
     - Combine Dataframes: pipelines_combine_dataframes.md
     - Feature Extraction: pipelines_feature_extraction.md
     - Train Model: pipelines_train_model.md
-    - Complete Pipeline: pipelines_complete_pipeline.md
+    - End To End: pipelines_complete_pipeline.md
     - Classify Movement Data: pipelines_classifying_data.md
   - Classes:
     - Import Data: classes_import_data.md
