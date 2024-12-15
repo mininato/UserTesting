@@ -8,7 +8,7 @@ Welcome to the **Emotion Recognition Pipeline**! This guide will help you instal
 
 ### Prerequisites
 
-- **Python**: Version 3.8 or higher.
+- **Python**: Version 3.10 or higher.
 - **Environment**: It is recommended to create a virtual environment for managing dependencies.
 
 ```bash
@@ -20,8 +20,8 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/emotion-recognition-pipeline.git
-   cd emotion-recognition-pipeline
+   git clone https://huggingface.co/spaces/mininato/EmotionClassificationPipeline
+   cd EmotionClassificationPipeline
    ```
 
 2. Install dependencies:
@@ -98,18 +98,49 @@ This Pipeline consists out of **multiple smaller pipelines** which can be used s
 
 ---
 
+> **Note:** If you want to read more on each setting then click [here](other.md).
+
 ### **6.2. How to combine Dataframes**
+
+1. Import Accelerometer Data & SelfReports Data
+2. Set the time window that you want to filter (in minutes before and after a report)
+3. Set the emotion labels that exist in your data (e.g. valence, arousal)
+4. Execute Pipeline
+5. Download combined dataset
 
 ---
 
 ### **6.3. How to extract Features**
+1. Import the combined dataset
+2. Add cutoff frequency and order for low pass filter
+3. Set desired scaler
+4. Set window length and overlapping step size (in seconds) for sliding window technique
+5. Set frequency in which data was recorded
+6. Set magnitude
+7. Set the emotion labels that exist in your data (e.g. valence, arousal)
+8. Execute Pipeline
+9. Download features dataset
 
 ---
 
 ### **6.4 How to train a Model**
+1. Import the features dataset
+2. Select if PCA is being applied and the PCA variance
+3. Select classifier
+4. Set the emotion labels that exist in your data (e.g. valence, arousal)
+5. Select which label should be the target for the model to classify
+6. Execute Pipeline
+7. Download model.pkl file and report.json file
 
 ---
 
 ### **6.5 How to classify Movement Data**
+1. Import accelerometer data and model
+2. Add cutoff frequency and order for lowpassfilter
+3. Set desired scaling type
+4. Set period for classifying movement data
+5. Set frequency in which data was recorded
+6. Set magnitude (measure of the overall strength or intensity of a signal, calculated by combining the contributions of all three accelerometer axes (x, y, z))
+7. Set the emotion labels that exist in your data (e.g. valence, arousal)
 
 ---

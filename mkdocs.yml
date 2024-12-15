@@ -62,6 +62,7 @@ nav:
     - Principal Component Analysis (PCA): classes_pca_handler.md
     - Train Model: classes_train_model.md
     - Classify Movement Data: classes_classify_movement_data.md
+  - Other: other.md
 
 
 
