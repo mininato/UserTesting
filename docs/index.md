@@ -90,23 +90,26 @@ This Pipeline consists out of **multiple smaller pipelines** which can be used s
 ![Complete Pipeline](images/Complete_PipelineDiagram_End.drawio.svg)
 
 ---
-## **6.General Workflow using the Pipeline**
+## **6.General Workflow using the Gradio User Interface**
 
-### **6.1. How to combine Dataframes**
-If you want to train a model on a given dataset, you will like have two seperate datasets, one containing the Raw Accelerometer Data and second a Dataset with the labeled data. You can now use this predefined pipeline to combine those datasets. You can choose which size the timewindow should be. A timewindow is the amount of time before and after the emotion was labeled. Also you will have to 
+### **6.1 How to use Gradio Interface**
 
-
-
----
-
-### **6.2. How to extract Features**
+![Gradio Showcase](images/gradiotut.gif){ style="max-width: 100%; height: auto; display: block; margin: 0 auto;" }
 
 ---
 
-### **6.3 How to train a Model**
+### **6.2. How to combine Dataframes**
 
 ---
 
-### **6.4 How to classify Movement Data**
+### **6.3. How to extract Features**
+
+---
+
+### **6.4 How to train a Model**
+
+---
+
+### **6.5 How to classify Movement Data**
 
 ---
