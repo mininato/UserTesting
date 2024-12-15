@@ -1,5 +1,10 @@
 # UserTesting
 
+## 🚀 **Link to Pipeline**
+https://huggingface.co/spaces/mininato/EmotionClassificationPipeline
+
+## 🗂️ **Link to Files**
+
 ## 📁 **Use Case 1:** 
 
 Imagine you’re a researcher who wants to analyze movement data. You already conducted a experiment where you collected a dataset of ***accelerometer data*** from participants. The participants had to report their emotions ***every 10 minutes*** throughout the experiment. So you have a second report dataset with ***labeled data***. Now you think it would be nice to ***train a model*** on your recorded data. After a long search in the world wide web you found this pipeline.
