@@ -43,6 +43,8 @@ Movement data refers to the information captured about how a body moves through 
 
 The recorded data is stored in raw formats, often as time-series data with timestamps and helps us **understand physical activity patterns, postures, and even subtle gestures.**
 
+![AccelData](images/AccelData.png)
+
 ---
 ## **3. Understanding Emotions**
 
@@ -59,7 +61,8 @@ There are also other emotion models:
 
 - The Positive and Negative Affect Schedule (PANAS) Model
 
-
+The Emotions can be reported in a csv like this:
+![Selfreports](images/Selfreports.png)
 
 ---
 ## **4. Movement Data Processing**
